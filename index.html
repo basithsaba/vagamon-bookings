@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Vagamon Bookings</title>
+    <link rel="stylesheet" href="styles.css?v=20260819-3" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="card">
+        <header class="hero">
+          <div class="hero-content">
+            <p class="eyebrow">Stay bookings</p>
+            <h1>Vagamon Bookings</h1>
+            <p class="subtitle">A simple calendar for tracking availability without login.</p>
+          </div>
+        </header>
+
+        <div class="legend" aria-label="Status legend">
+          <span><span class="swatch available"></span>Available</span>
+          <span><span class="swatch hold"></span>Hold</span>
+          <span><span class="swatch soldout"></span>Sold out</span>
+        </div>
+        <p class="live-note" id="sync-status" role="status" aria-live="polite">Saving changes locally and checking remote sync...</p>
+
+        <section class="calendar-panel" aria-label="Booking calendar">
+          <div class="calendar-header">
+            <div class="calendar-nav">
+              <button class="nav-btn" id="prev-month-btn" type="button" aria-label="Previous month">←</button>
+              <h2 id="month-label"></h2>
+              <button class="nav-btn" id="next-month-btn" type="button" aria-label="Next month">→</button>
+            </div>
+            <div class="weekday-row" id="weekday-row"></div>
+          </div>
+          <div id="calendar-grid" class="calendar-grid"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js?v=20260819-3"></script>
+  </body>
+</html>
